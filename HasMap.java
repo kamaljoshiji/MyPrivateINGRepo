@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------------------
+ *     Ident: Java Education Center
+ *    Author: wingerma, neerpati
+ * Copyright: (c) 1-apr-1014 Sogeti Nederland B.V. All Rights Reserved.
+ *------------------------------------------------------------------------------
+ * Sogeti Nederland B.V.    |  No part of this file may be reproduced or
+ * Divisie Managed Delivery |  transmitted in any form or by any means,
+ * Lange Dreef 17           |  electronic or mechanical, for the purpose,
+ * 4131 NJ VIANEN           |  without the express written permission of the
+ * The Netherlands          |  copyright holder.
+ *------------------------------------------------------------------------------
+ */
+package nl.aegon.assessment.cases.helpers;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HasMap<K, V> extends HashMap<K, V> implements Map<K, V>
+{
+   /**
+    * <code>serialVersionUID</code> indicates/is used for.
+    */
+   private static final long serialVersionUID = 6401862082671079797L;
+   private int usingGet;
+
+   /*
+    * (non-Javadoc)
+    * @see java.util.HashMap#get(java.lang.Object)
+    */
+   @Override
+   public V get(Object key)
+   {
+      usingGet++;
+      return super.get(key);
+   }
+
+   /**
+    * Get the usingGet.
+    * 
+    * @return Returns the usingGet as a int.
+    */
+   public int getUsingGet()
+   {
+      return usingGet;
+   }
+}
