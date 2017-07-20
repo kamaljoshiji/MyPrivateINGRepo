@@ -22,7 +22,7 @@ public class HasMap<K, V> extends HashMap<K, V> implements Map<K, V>
     */
    private static final long serialVersionUID = 6401862082671079797L;
    private int usingGet;
-
+	System.out.println("HashMap::: inserted to generate conflict");
    /*
     * (non-Javadoc)
     * @see java.util.HashMap#get(java.lang.Object)
