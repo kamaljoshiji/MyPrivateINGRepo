@@ -22,11 +22,9 @@ public class HasMap<K, V> extends HashMap<K, V> implements Map<K, V>
     */
    private static final long serialVersionUID = 6401862082671079797L;
    private int usingGet;
-<<<<<<< HEAD
-	System.out.println("Merge conflict resolved between feature1 version in dev branch and feature2version we are trying to checkin");
-=======
 
->>>>>>> feature2
+	System.out.println("Merge conflict resolved between feature1 version in dev branch and feature2version we are trying to checkin");
+
    /*
     * (non-Javadoc)
     * @see java.util.HashMap#get(java.lang.Object)
