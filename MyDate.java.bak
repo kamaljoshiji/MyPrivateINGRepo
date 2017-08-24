@@ -20,7 +20,7 @@ public class MyDate extends Date
 
    /*
     * This is not where you should fix any problems, you should not depend on the clone method but explicitly create a new object.
-    * @see java.util.Date#clone()..
+    * @see java.util.Date#clone()
     */
    @Override
    public Object clone()
